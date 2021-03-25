@@ -15,7 +15,8 @@ trap cleanup EXIT
 
 main() {
   # Sample command, replace with your own command.
-  kubectl get nodes
+  kind create cluster
+  kubectl apply -f https://storage.googleapis.com/tekton-releases/pipeline/latest/release.yaml
 }
 
 main 
