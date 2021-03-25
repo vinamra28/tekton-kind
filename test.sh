@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Based off https://github.com/kind-ci/examples
+
 # standard bash error handling
 set -o errexit;
 set -o pipefail;
@@ -14,8 +16,9 @@ cleanup() {
 trap cleanup EXIT
 
 main() {
-  # Sample command, replace with your own command.
   kind create cluster
+
+  # Sample command, replace with your own command.
   kubectl apply -f https://storage.googleapis.com/tekton-releases/pipeline/latest/release.yaml
 }
 
