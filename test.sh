@@ -19,7 +19,7 @@ main() {
   kind create cluster
 
   # Sample command, replace with your own command.
-  kubectl apply -f https://storage.googleapis.com/tekton-releases/pipeline/latest/release.yaml
+  kubectl apply -f https://storage.googleapis.com/tekton-releases/pipeline/previous/v0.39.0/release.yaml
 }
 
 main 
